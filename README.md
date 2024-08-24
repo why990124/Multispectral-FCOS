@@ -66,9 +66,33 @@ you need to put the dataset and the pretrained weight "ResNet50.pth" in root dir
 ```python
 kaist_eval.py
 ```
-eval_batch_size = 8, if this is modified, the evaluation results are different, which may be caused by Batch Normalization. This is a bug in original [code](https://github.com/zhenghao977/FCOS-PyTorch-37.2AP)
+You can set batch_size casually
 
-Meanwhile, parameter "Shuffle" in generator must be "False", otherwise,the results will vary every time 
+I find that there is a bug in  original [code](https://github.com/zhenghao977/FCOS-PyTorch-37.2AP) in model/fcos_multispectral.py. 
+
+```python
+Class FCOS:
+..........
+   def train(self, mode=True):
+       '''
+       set module training mode, and frozen bn
+       '''
+       super().train(mode=True)
+```
+[@Zhenghao977](https://github.com/zhenghao977/FCOS-PyTorch-37.2AP) reload nn.module.train, which lead to the result that if we use model.eval(), all models in "FCOS" are set "training=True", especially for Batch Normalization. This will lead to different evaluation results when batch size is changed. So I change it.
+
+```python
+Class FCOS:
+..........
+   def train(self, mode=True):
+       '''
+       set module training mode, and frozen bn
+       '''
+       super().train(mode=mode)
+```
+
+In this way, Batch Normaliztion is fixed and does not affect the evaluation results.
+
 
 ### Detect
 ```python
