@@ -86,7 +86,7 @@ the offical use BGR to training and pixel is not normalized to 0~1 , I use RGB a
 
 data augmentation: only random flip
 
-###Acknowledgment
+### Acknowledgment
 thanks to [@Tencent](https://github.com/Tencent/ObjectDetection-OneStageDet/tree/master), [@Ye-zixiao](https://gitee.com/yezixiao/Double-YOLO-Kaist#https://gitee.com/link?target=https%3A%2F%2Fpan.baidu.com%2Fs%2F1h1e3rZQqIR9MIdiF0W7nXQ) 
 and [@CalayZhou](https://github.com/CalayZhou/MBNet), I referenced some codes.
 
