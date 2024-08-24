@@ -39,8 +39,8 @@ def get_logger(filename, verbosity=1, name=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--epochs", type=int, default=150, help="number of epochs")
-    parser.add_argument("--batch_size", type=int, default=1, help="size of each image batch")
-    parser.add_argument("--n_cpu", type=int, default=0, help="number of cpu threads to use during batch generation")
+    parser.add_argument("--batch_size", type=int, default=12, help="size of each image batch")
+    parser.add_argument("--n_cpu", type=int, default=12, help="number of cpu threads to use during batch generation")
     parser.add_argument("--n_gpu", type=str, default='0', help="index of gpu to use during training")
     parser.add_argument("--eval_step", type=int, default=1, help="steps between evaluation")
     parser.add_argument("--img_size", type=list, default=[512,640], help="input image_size")
