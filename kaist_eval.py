@@ -359,9 +359,9 @@ if __name__ == "__main__":
                                   anno_path="E:/dataset//coco/annotations/val_2017.json",
                               resize_size=[512,640])
 
-    generator = torch.utils.data.DataLoader(generator, batch_size=1, shuffle=False,
+    generator = torch.utils.data.DataLoader(generator, batch_size=8, shuffle=False,
                                                collate_fn=generator.collate_fn,
-                                               num_workers=0, worker_init_fn=np.random.seed(0))
+                                               num_workers=8, worker_init_fn=np.random.seed(0))
     model=FCOSDetector(mode="inference", loss= 'v2', config = DefaultConfig_v1)
 
     model = torch.nn.DataParallel(model)
