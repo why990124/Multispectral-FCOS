@@ -45,8 +45,6 @@ root
            
 ```
 
-Train Modified on 1 3090 Ti, batch_size = 12, init lr=1e-2.
-You can download the dataset in [Google Drive](https://drive.google.com/file/d/160rjtSSoL6kr6ycYmp2_YK3fOk5Ibk2B/view?usp=sharing), no password
 
 ### Weight
 You can download weights in [Google Drive](https://drive.google.com/file/d/1yUH0vp2oAauwO8Vfx9g-u4v43mVK42jx/view?usp=sharing), no password, then run the kaist_eval.py
