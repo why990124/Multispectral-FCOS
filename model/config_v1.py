@@ -1,6 +1,6 @@
 class DefaultConfig_v1():
     #backbone
-    pretrained=False
+    pretrained=True
     freeze_stage_1=False
     freeze_bn=False
 
