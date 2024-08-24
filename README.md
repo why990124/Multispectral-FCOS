@@ -66,7 +66,7 @@ you need to put the dataset and the pretrained weight "ResNet50.pth" in root dir
 ```python
 kaist_eval.py
 ```
-eval_batch_size = 8, if this is modified, the evaluation results are different, which may be caused by Batch Normalization. 
+eval_batch_size = 8, if this is modified, the evaluation results are different, which may be caused by Batch Normalization. This is a bug in original [code](https://github.com/zhenghao977/FCOS-PyTorch-37.2AP)
 
 Meanwhile, parameter "Shuffle" in generator must be "False", otherwise,the results will vary every time 
 
