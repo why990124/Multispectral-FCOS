@@ -1,7 +1,7 @@
 ## Multispectral FCOS: Pytorch Implementation Support MS COCO
 Implementation of this [paper](https://linkinghub.elsevier.com/retrieve/pii/S0926580522002187)
 
-FCOS code which is similar with this [repo](hhttps://github.com/zhenghao977/FCOS-PyTorch-37.2AP)
+FCOS code which is similar with this [repo](https://github.com/zhenghao977/FCOS-PyTorch-37.2AP)
 
 
 
