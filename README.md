@@ -18,7 +18,7 @@ FCOS code which is similar with this [repo](hhttps://github.com/zhenghao977/FCOS
 * logging
 
 ### Modified KAIST Dataset (COCO format)
-Train Modified on 1 3090 Ti, batch_size = 12, init lr=1e-2.
+Train Modified KAIST Dataset on 1 3090 Ti, batch_size = 12, init lr=1e-2.
 You can download the dataset in [Google Drive](https://drive.google.com/file/d/160rjtSSoL6kr6ycYmp2_YK3fOk5Ibk2B/view?usp=sharing), no password
 
 ### Dataset location
