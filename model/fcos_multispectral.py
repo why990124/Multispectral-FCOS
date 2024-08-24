@@ -30,7 +30,7 @@ class FCOS(nn.Module):
         '''
         set module training mode, and frozen bn
         '''
-        super().train(mode=True)
+        super().train(mode=mode)
 
         def freeze_bn(module):  # freeze batch normalization
             if isinstance(module, nn.BatchNorm2d):
